@@ -1,24 +1,22 @@
 # Laptop Customizer
 
-This application is completely functional in that it does exactly what it is supposed to do. 
-On closer examination of the source code, you notice that all the functionality have been built 
-into a single component! There is no hierarchy of components. The single component has grown 
-quite large and is doing too many different things. Unfortunately, apart from the source code, 
-the former developer did not provide any documentation.
+ELF Computers has hired you as a React developer. You've inherited some code for ELF's new order customization interface, 
+and now it's your job to improve the code base.
 
-Your task is to refactor this application using a more React style approach to the problem. 
-Note the following, however:
+The app is already functional. It allows users to build a custom laptop from a series of options, and reports the total 
+cost of the user's order. One problem: all the functionality has been built into a single component! The single component 
+has grown quite large and is doing too many different things. Unfortunately, apart from the source code, the previous 
+developer provided little documentation.
 
-the style is not very important, that is, try to keep the same style, but if you break it do 
-not spend too much time on it and do not spend any time trying to improve the style.
+Your task is to refactor this application using what you know about component-based organization. Note the following, however:
 
-All the functionality works so code to perform the various tasks have been written and you can 
-just reuse that code. No need to write new code. If the app does not do something that you think 
-it should then chances are the decision to leave it out was deliberate.
-
-Start by breaking down the user interface into components and drawing a hierarchical tree of 
-components. You should be able to break it down into at least five components, possibly even 
-more! Once you are satisfied that you have sufficiently broken it down then decide on state 
-and where it should live. Finally, add the interactivity.
+The style is not important. Try to keep everything looking the same; if you do break the styles, do not spend too much time 
+trying to fix them. You can copy the existing CSS into new files for better organization, but you should not edit it.
+The app works as intended; you only have to reorganize the code that is already there. This will require making new component 
+files, but not much beyond that. If the app does not do something that you think it should, assume those changes can be made later.
+Begin this task by breaking down the user interface into components and drawing them as a hierarchical tree. You should be able
+to identify at least 6 components - possibly even more! Once you are satisfied with the component organization, take some time 
+to plan out where the state(s) of the app will live. Finally, create the component files you will need, and move the existing 
+code into those files.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
