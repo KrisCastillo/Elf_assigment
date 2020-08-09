@@ -9,4 +9,4 @@ const Feature = ({options, product}) => (
 </div>
 )
 
-export default Feature; 
+export default FeatureProduct; 
