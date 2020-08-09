@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Feature from './Features'
+import Feature from './FeatureProduct'
 import Specs from './Specs'
 
-export class TechSpecs extends Component {
+export class FeatureSpecs extends Component {
   render() {
     
     const features = Object.keys(this.props.unselected)
@@ -37,4 +37,4 @@ export class TechSpecs extends Component {
   }
 }
 
-export default TechSpecs
+export default FeatureSpecs
