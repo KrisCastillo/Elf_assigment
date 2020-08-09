@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Feature from './FeatureProduct'
+import FeatureProduct from './FeatureProduct'
 import Specs from './Specs'
 
 export class FeatureSpecs extends Component {
@@ -20,7 +20,7 @@ export class FeatureSpecs extends Component {
                         item={item}
               />});
 
-            return <Feature 
+            return <FeatureProduct 
                       key={key} 
                       product ={key} 
                       options = {options} />});      
