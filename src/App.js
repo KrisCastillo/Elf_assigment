@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './styles/App.css';
 import NavBar from './components/NavBar';
-import TechSpecs from './components/TechSpecs';
+import FeatureSpecs from './components/FeatureSpecs';
 import Summary from './components/Summary';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: this.props.features.selected,
-      unselected: this.props.features.unselected
+      selected: this.props.featureProduct.selected,
+      unselected: this.props.featureProduct.unselected
     }
   }
 
@@ -26,7 +26,7 @@ class App extends Component {
       <div className="App">
       <NavBar />
         <main>
-          <TechSpecs  unselected={this.state.unselected} selected={this.state.selected} updateFeature={this.updateFeature.bind(this)}/>
+          <FeatureSpecs  unselected={this.state.unselected} selected={this.state.selected} updateFeature={this.updateFeature.bind(this)}/>
           <Summary selected={this.state.selected}/>
         </main>
       </div>
