@@ -8,8 +8,8 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selected: this.props.featureProduct.selected,
-      unselected: this.props.featureProduct.unselected
+      selected: this.props.features.selected,
+      unselected: this.props.features.unselected
     }
   }
 
